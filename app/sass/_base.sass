@@ -1,0 +1,391 @@
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  scroll-behavior: smooth
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #a4a4a4
+  font-size: 0.8rem
+  opacity: 1
+
+*:-moz-placeholder
+  color: #a4a4a4
+  font-size: 0.8rem
+  opacity: 1
+
+*::-moz-placeholder
+  color: #a4a4a4
+  font-size: 0.8rem
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #a4a4a4
+  font-size: 0.8rem
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+
+
+body 
+  overflow-x: hidden
+
+// html,body
+//   margin: 0
+//   padding: 0
+//   font-size: 1.3vw
+//   line-height: 1
+//   // font-family: $reg
+//   opacity: 1
+//   // background-image: url('/application/themes/danica/img/new-landing/bg.png')
+//   background-image: url('https://passivehouse.ua/media/landing/img/bg.png')
+//   // background-image: url('../../img/bg.png')
+//   background-position: center
+//   // overflow-x: hidden
+// header a.logo
+//   margin: 0
+// .top-switch-bg
+//   display: none
+// .main
+//   width: 100% !important
+
+// .cms-index-index .col-main-wrap
+//   padding: 0 !important
+
+// .main-container
+//   background-color: transparent
+
+// .footer-container
+//   h4
+//     font-family: "Open Sans" !important
+//   ul li 
+//     line-height: .5 !important
+//   a 
+//     font-family: Arial, Helvetica, sans-serif !important
+//     line-height: 
+//     font-size: 12px
+//   .footer-info 
+//     padding: 3rem
+//     p 
+//       font-size: 12px
+
+.danicaland-wrapper
+  min-width: 320px
+  max-width: 2324px 
+  font-family: $reg
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+  // overflow-x: hidden
+.page-footer
+  height: 20rem !important
+
+
+@mixin  button($bgc, $cl, $br, $bgch, $hcl, $brh)
+  padding: .8rem 1.2rem
+  background-color: $bgc
+  border-radius: .2rem
+  color: $cl
+  text-transform: uppercase
+  outline: none
+  border-color: $br
+  border-width: 1px
+  border-style: solid
+  &:hover,
+  &:focus,
+  &:active
+    transition: all .5s linear
+    color: $hcl
+    background-color: $bgch
+    border-color: $brh
+    border-width: 1px
+    border-style: solid
+
+.danicaland-wrapper
+
+  h4, .h4
+    font-size: 1.8vw
+    margin: 1.5rem 0
+    line-height: 1
+    letter-spacing: .5px
+    text-transform: uppercase
+
+  h1, h2, h3, h4, .h1, .h2, .h3, .h4, .h5, .h6
+    font-family: $bold
+    text-transform: initial
+    padding: 0
+    text-transform: uppercase
+  p,a
+    margin: 0
+    padding: 0
+    font-family: $reg
+  
+  input, select
+    padding: .5rem  1rem
+    border: 1px solid $gray1
+    width: 100%
+    outline: none
+    &:focus::-webkit-input-placeholder
+      opacity: 0
+  .select
+    position: relative
+    &::after 
+      width: 0
+      content: ""
+      height: 0
+      border-left: 7px solid transparent
+      border-right: 7px solid transparent
+      border-top: 7px solid $orange
+      position: absolute
+      top: 1.3rem
+      right: 1rem
+  select
+    padding: 1rem
+    -webkit-appearance: none
+    -moz-appearance: none 
+    appearance: none
+    font-size: 1rem
+    
+  select.border 
+    border: 1px solid $orange
+
+  textarea 
+    border: none
+    border-radius: .2rem
+    width: 80%
+    min-height: 4rem
+    margin-left: .5rem
+    background-color: rgba(255,255,255, .5)
+
+  .img-responsive
+    display: block
+    width: 100%
+    height: auto
+    object-fit: cover 
+    object-position: center
+
+  hr 
+    background-color: $black 
+    height: 1px
+    width: 100%
+
+  .upper 
+    text-transform: uppercase
+  
+  .mb-0
+    margin-bottom: 0
+  .mb-05
+    margin-bottom: 0.5rem  
+  .mb-1
+    margin-bottom: 1rem
+  .mb-2
+    margin-bottom: 2rem
+  .mb-3
+    margin-bottom: 3rem
+  .mb-4
+    margin-bottom: 4rem
+  .mb-5
+    margin-bottom: 5rem
+  .mb-6
+    margin-bottom: 6rem
+  .mb-7
+    margin-bottom: 7rem
+  .mb-8
+    margin-bottom: 8rem
+  .mb-9
+    margin-bottom: 9rem
+  .mb-10
+    margin-bottom: 10rem
+
+  .mt-0 
+    margin-top: 0
+  .mt-05
+    margin-top: 0.5rem  
+  .mt-1
+    margin-top: 1rem
+  .mt-2
+    margin-top: 2rem
+  .mt-3
+    margin-top: 3rem
+  .mt-4
+    margin-top: 4rem
+  .mt-5
+    margin-top: 5rem
+  .mt-6
+    margin-top: 6rem
+  .mt-7
+    margin-top: 7rem
+  .mt-8
+    margin-top: 8rem
+  .mt-9
+    margin-top: 9rem
+  .mt-10
+    margin-top: 10rem
+  .mt-12
+    margin-top: 12rem
+
+  .ml-1
+    margin-left: 1rem
+  .ml-2
+    margin-left: 2rem
+  .ml-3
+    margin-left: 3rem
+  .ml-4
+    margin-left: 4rem
+  .ml-5
+    margin-left: 5rem
+  .ml-6
+    margin-left: 6rem
+  .ml-7
+    margin-left: 7rem
+  .ml-8
+    margin-left: 8rem
+  .ml-9
+    margin-left: 9rem
+  .ml-10
+    margin-left: 10rem
+
+  .mr-1
+    margin-right: 1rem
+  .mr-2
+    margin-right: 2rem
+  .mr-3
+    margin-right: 3rem
+  .mr-4
+    margin-right: 4rem
+  .mr-5
+    margin-right: 5rem
+  .mr-6
+    margin-right: 6rem
+  .mr-7
+    margin-right: 7rem
+  .mr-8
+    margin-right: 8rem
+  .mr-9
+    margin-right: 9rem
+  .mr-10
+    margin-right: 10rem
+
+
+  .pb-1
+    padding-bottom: 1rem
+  .pb-2
+    padding-bottom: 2rem
+  .pb-3
+    padding-bottom: 3rem
+  .pb-4
+    padding-bottom: 4rem
+  .pb-5
+    padding-bottom: 5rem
+  .pb-6
+    padding-bottom: 6rem
+  .pb-7
+    padding-bottom: 7rem
+  .pb-8
+    padding-bottom: 8rem
+  .pb-9
+    padding-bottom: 9rem
+  .pb-10
+    padding-bottom: 10rem
+  .pb-11
+    padding-bottom: 11rem
+  .pb-12
+    padding-bottom: 12rem
+  .pb-13
+    padding-bottom: 13rem
+
+  .pt-1
+    padding-top: 1rem
+  .pt-2
+    padding-top: 2rem
+  .pt-3
+    padding-top: 3rem
+  .pt-4
+    padding-top: 4rem
+  .pt-5
+    padding-top: 5rem
+  .pt-6
+    padding-top: 6rem
+  .pt-7
+    padding-top: 7rem
+  .pt-8
+    padding-top: 8rem
+  .pt-9
+    padding-top: 9rem
+  .pt-10
+    padding-top: 10rem
+
+  .pl-1
+    padding-left: 1rem
+  .pl-2
+    padding-left: 2rem
+  .pl-3
+    padding-left: 3rem
+  .pl-4
+    padding-left: 4rem
+  .pl-5
+    padding-left: 5rem
+  .pl-6
+    padding-left: 6rem
+  .pl-7
+    padding-left: 7rem
+  .pl-8
+    padding-left: 8rem
+  .pl-9
+    padding-left: 9rem
+  .pl-10
+    padding-left: 10rem
+
+  .pr-1
+    padding-right: 1rem
+  .pr-2
+    padding-right: 2rem
+  .pr-3
+    padding-right: 3rem
+  .pr-4
+    padding-right: 4rem
+  .pr-5
+    padding-right: 5rem
+  .pr-6
+    padding-right: 6rem
+  .pr-7
+    padding-right: 7rem
+  .pr-8
+    padding-right: 8rem
+  .pr-9
+    padding-right: 9rem
+  .pr-10
+    padding-right: 10rem
+
+
+  .w-100 
+    width: 100%
+  .h-100
+    height: 100%
+  .box-shadow-gray
+    box-shadow: 0 10px 50px -20px 
+  .h-100  
+    height: 100%
+  .white 
+    color: $white
+  .blue
+    color: $blue
+  .gray
+    color: $gray1
+  .reg 
+    font-family: $reg
+  .bold 
+    font-family: $bold
+    text-transform: uppercase

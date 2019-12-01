@@ -1,0 +1,33 @@
+{
+    "name": "gulp+webpack",
+    "version": "1.0.0",
+    "description": "Start HTML Template",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Onyshchuk Maria",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.0.0",
+        "@babel/preset-env": "^7.0.0",
+        "babel-loader": "^8.0.0",
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-notify": "^3.2.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-rsync": "0.0.8",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "jquery": "^3.3.1",
+        "webpack": "^4.41.2",
+        "webpack-stream": "^5.2.1"
+    },
+    "dependencies": {
+        "fullpage.js": "^3.0.7",
+        "gulp-sourcemaps": "^2.6.5"
+    }
+}
